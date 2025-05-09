@@ -1,0 +1,8 @@
+PREFIX megras: <http://megras.org/sparql#>
+
+SELECT megras:COSINE_SIM(?t1, ?t2, 0.8) megras:COSINE_SIM(?t1, ?t3, 0.8)
+WHERE {
+  BIND (megras:CLIP_TEXT("A man walking a dog") as ?t1)
+  BIND (megras:CLIP_TEXT("A man walking a cat") as ?t2)
+  BIND (megras:CLIP_TEXT("House Main Character Doctor") as ?t3)
+}
