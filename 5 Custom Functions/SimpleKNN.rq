@@ -1,0 +1,12 @@
+PREFIX megras: <http://megras.org/sparql#>
+PREFIX lsc: <http://lsc.dcu.ie/schema#>
+
+SELECT ?nn ?similarity
+WHERE {
+  BIND (<http://localhost/ifQiI7zY2Hh5fFByiHNygTy48d6q84DQobuMTZGtz5X51RmZSebtjJQ> as ?img)
+  ?img <http://lsc.dcu.ie/feature#mmr> ?mmr .
+  ?nn <http://lsc.dcu.ie/feature#mmr> ?o .
+  BIND (megras:COSINE_SIM(?mmr, ?o) as ?similarity)
+  FILTER (?img != ?nn)
+}
+ORDER BY DESC(?similarity) LIMIT 3
