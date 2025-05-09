@@ -1,0 +1,10 @@
+PREFIX megras: <http://megras.org/sparql#>
+PREFIX lsc: <http://lsc.dcu.ie/schema#>
+
+SELECT ?img
+WHERE {
+	?img lsc:caption ?caption .
+	BIND (megras:CLIP_TEXT("a white wall with a picture on it") as ?textVec)
+	BIND (megras:CLIP_TEXT(?caption) as ?capVec)
+	FILTER (megras:COSINE_SIM(?textVec, ?capVec, 0.8))
+}
