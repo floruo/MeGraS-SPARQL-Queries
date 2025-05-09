@@ -1,0 +1,6 @@
+PREFIX megras: <http://megras.org/sparql#>
+
+SELECT ?textVec
+WHERE {
+	BIND (megras:CLIP_TEXT("A man walking a dog") as ?textVec)
+}
