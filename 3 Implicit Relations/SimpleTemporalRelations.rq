@@ -1,0 +1,16 @@
+PREFIX temporal: <http://megras.org/implicit/temporal/>
+
+# Available temporal relations:
+# precedes
+# after
+# starts
+# finishes
+# meets
+# contains
+# equals
+# overlaps
+
+SELECT *
+WHERE {
+  <http://localhost/i4PDg4ODg4OBa57ZxzWd5gz1BuJN7pFh780BHj7KNeNGqGAT0MmXmKA> temporal:precedes ?o .
+}
