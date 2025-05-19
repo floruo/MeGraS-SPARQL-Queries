@@ -2,5 +2,5 @@ PREFIX implicit: <http://megras.org/implicit/>
 
 SELECT *
 WHERE {
-  <http://localhost:8080/iwMDg-D4fHw_nQ35egd4KVW3TnnxyWoVsC58EhAPuS0FMfdFMGZHvaQ> implicit:nearDuplicate ?o .
+  <http://localhost:8080/iwMDg-D4fHw_nQ35egd4KVW3TnnxyWoVsC58EhAPuS0FMfdFMGZHvaQ> implicit:clipNearDuplicate ?o .
 }
