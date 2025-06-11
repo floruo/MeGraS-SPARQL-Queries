@@ -1,6 +1,0 @@
-PREFIX implicit: <http://megras.org/implicit/>
-
-SELECT *
-WHERE {
-  <http://localhost:8080/thisIsTotallyAValidIdentifier> implicit:samePrefix ?o .
-}
