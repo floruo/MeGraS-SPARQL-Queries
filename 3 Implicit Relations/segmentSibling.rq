@@ -1,0 +1,6 @@
+PREFIX implicit: <http://megras.org/implicit/>
+
+SELECT ?o
+WHERE {
+  <URI> implicit:segmentSibling ?o .
+}
