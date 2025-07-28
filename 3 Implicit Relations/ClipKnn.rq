@@ -1,6 +1,8 @@
 PREFIX implicit: <http://megras.org/implicit/>
 
+# K is any integer number: e.g., implicit:clip11nn
+
 SELECT *
 WHERE {
-  <URI> implicit:clip2nn ?o .
+  <URI> implicit:clipKnn ?o .
 }
