@@ -1,0 +1,8 @@
+PREFIX megras: <http://megras.org/sparql#>
+
+# ISO: 1=Monday, 7=Sunday
+
+SELECT ?textVec
+WHERE {
+  BIND (megras:DAYOFWEEK("2019-12-24") as ?textVec)
+}
