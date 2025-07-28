@@ -1,0 +1,6 @@
+PREFIX derived: <http://megras.org/derived/>
+
+SELECT *
+WHERE {
+  <URI> derived:ocr ?o .
+}
