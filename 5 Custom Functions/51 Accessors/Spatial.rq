@@ -1,0 +1,19 @@
+PREFIX megras: <http://megras.org/sparql#>
+
+# Available Accessors:
+# WIDTH
+# HEIGHT
+# DEPTH
+# DURATION
+# XYZT
+# Bounds Only:
+## BOUNDS_AREA
+## BOUNDS_CENTER
+# Segments Only:
+## SEGMENT_AREA
+## SEGMENT_CENTER
+
+SELECT ?a
+WHERE {
+  BIND (megras:WIDTH(<URL>) as ?a)
+}
