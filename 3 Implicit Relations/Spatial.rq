@@ -1,0 +1,22 @@
+PREFIX spatial: <http://megras.org/implicit/spatial/>
+
+# Available Spatial Relations:
+# contains
+# equals
+# intersects
+# within
+# covers
+# beside
+# disjoint
+# overlaps
+# above
+# below
+# left
+# right
+# crosses
+# touches
+
+SELECT *
+WHERE {
+  ?s spatial:contains ?o .
+}
