@@ -1,0 +1,15 @@
+PREFIX exif: <http://megras.org/exif/Date/>
+
+# Available Temporal Relations:
+# =
+# >
+# <
+# <=
+# >=
+
+SELECT *
+WHERE {
+  <URI> exif:Time ?t1 . 
+  ?s exif:Time ?t2 .
+  FILTER (?t1 = ?t2)
+}
